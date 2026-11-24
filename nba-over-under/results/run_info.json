@@ -1,0 +1,56 @@
+{
+  "config": {
+    "data_dir": "data",
+    "out_dir": "results",
+    "train_seasons": [
+      "2012-2013",
+      "2013-2014",
+      "2014-2015",
+      "2015-2016"
+    ],
+    "val_season": "2016-2017",
+    "test_season": "2017-2018",
+    "n_history": 3,
+    "seeds": 5,
+    "quick": false,
+    "models": [
+      "rf",
+      "cf",
+      "mlp",
+      "lstm"
+    ],
+    "max_epochs": 150,
+    "extra": {}
+  },
+  "selected": {
+    "rf_best_params": {
+      "max_features": 0.5,
+      "min_samples_leaf": 20
+    },
+    "cf_best_params": {
+      "window": 90,
+      "reg_bias": 3.0,
+      "reg_factor": 1000.0
+    },
+    "mlp_best_params": {
+      "lr": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0
+    },
+    "lstm_best_params": {
+      "lr": 0.002,
+      "weight_decay": 0.01,
+      "dropout": 0.5,
+      "hidden": 40
+    }
+  },
+  "split_sizes": [
+    5069,
+    1260,
+    1264
+  ],
+  "test_games_with_line": 1222,
+  "test_mean_total": 212.48971557617188,
+  "train_mean_total": 200.7891082763672,
+  "runtime_sec": 769.6
+}
